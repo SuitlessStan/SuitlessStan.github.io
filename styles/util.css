@@ -1,0 +1,78 @@
+:root {
+  --primary: #191c20;
+  --secondary: #eeeff1;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+/* Margins */
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+/* Padding */
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+/* Containers */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}

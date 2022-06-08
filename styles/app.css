@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #191c20;
+  --secondary: #eeeff1;
+  background: var(--secondary);
+  font-family: "Tiro Devanagari Sanskrit", serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background: var(--secondary);
+}
+
+nav ul li {
+  margin-right: 0.3rem;
+}
+
+/* Home */
+
+.typewriter-effect-container {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid var(--primary);
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--primary);
+  }
+}
+
+.home-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-picture img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.about-me {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me {
+    font-size: medium;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .home-picture img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.contact-me {
+  display: inline-block;
+  border: 2px solid var(--primary);
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 40vw;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-me {
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+  }
+}
+
+#contact-list > * {
+  margin: 0.7rem 0;
+}
+
+.social-links {
+    display: flex;
+}
